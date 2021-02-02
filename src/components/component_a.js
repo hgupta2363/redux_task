@@ -12,9 +12,9 @@ class Component_a extends React.Component{
   render(){
 
    return (
-    <Provider store={store}>
-       <Component_b/>  
-       <Component_c/>
+    <Provider store={store}>//provide cetralized store to every child component
+       <Component_b/> // conatiner component 
+       <Component_c/>//presetational component
        </Provider>
    );
 

@@ -1,5 +1,6 @@
 
 
+//conatiner componet 
 
 import React from 'react';
 import store from '../store '
@@ -10,10 +11,12 @@ class Component_b extends React.Component{
   render(){
     
     var input_data;
+    // get the data of input textfield
 var handleChange=(e)=>
 {
   input_data=e.target.value
 }
+//dispatch the action to reducer  when user click the button
 var handleContent=()=>{
   store.dispatch({
     type:"LIST_ADDED",
